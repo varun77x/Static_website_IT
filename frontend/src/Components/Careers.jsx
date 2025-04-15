@@ -1,7 +1,7 @@
 export default function Careers() {
     return(
         <>
-         <section id="careers" className="scroll-mt-14 w-full py-4 px-6 bg-gray-100 flex flex-col items-center">
+         <section id="careers" className=" w-full py-4 px-6 bg-gray-100 flex flex-col items-center">
         <h2 className="text-7xl font-semibold mb-10 text-center">Careers</h2>
 
         <p className="text-lg max-w-4xl mx-auto">

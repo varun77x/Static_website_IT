@@ -1,7 +1,7 @@
 export default function About(){
     return(
         <div>
-        <section id="about" className="scroll-mt-14 py-4 bg-gray-100 text-center flex flex-col justify-center items-center">
+        <section id="about" className=" py-4 bg-gray-100 text-center flex flex-col justify-center items-center">
         <h2 className="text-7xl font-semibold mb-4">ABOUT US</h2>
         <p className="text-lg max-w-4xl mx-auto">
           Xangars is a global IT solutions provider with its cutting-edge solutions and services that provide support and impetus to emerging & established businesses in the areas of IT consulting, product engineering, custom software development, application integration and maintenance.
