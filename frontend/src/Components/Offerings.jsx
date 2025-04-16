@@ -98,7 +98,7 @@ export default function Offerings() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-6xl">
                     <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
                         <img src={TD1} alt="Underwriting" className="w-16 h-16 mb-4" />
-                        <h3 className="text-xl font-semibold mb-2">Underwriting</h3>
+                        <h3 className="text-sm md:text-xl font-semibold mb-2">Underwriting</h3>
                         <ul className="text-gray-600 text-sm list-disc pl-5 text-left">
                             <li>Video MER</li>
                             <li>Smart Reports</li>
@@ -108,7 +108,7 @@ export default function Offerings() {
 
                     <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
                         <img src={TD2} alt="Claims" className="w-16 h-16 mb-4" />
-                        <h3 className="text-xl font-semibold mb-2">Claims Investigation</h3>
+                        <h3 className="text-sm md:text-xl font-semibold mb-2">Claims Investigation</h3>
                         <ul className="text-gray-600 text-sm list-disc pl-5 text-left">
                             <li>Motor OD</li>
                             <li>AI-based assessment</li>
@@ -118,7 +118,7 @@ export default function Offerings() {
 
                     <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
                         <img src={TD3} alt="Risk Mitigation" className="w-16 h-16 mb-4" />
-                        <h3 className="text-xl font-semibold mb-2">Risk Mitigation</h3>
+                        <h3 className="text-sm md:text-xl font-semibold mb-2">Risk Mitigation</h3>
                         <ul className="text-gray-600 text-sm list-disc pl-5 text-left">
                             <li>eKYC</li>
                             <li>Face Match</li>
@@ -128,7 +128,7 @@ export default function Offerings() {
 
                     <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
                         <img src={TD4} alt="Deep Learning" className="w-16 h-16 mb-4" />
-                        <h3 className="text-xl font-semibold mb-2">Deep Learning</h3>
+                        <h3 className="text-sm md:text-xl font-semibold mb-2">Deep Learning</h3>
                         <ul className="text-gray-600 text-sm list-disc pl-5 text-left">
                             <li>Speech to Text</li>
                             <li>Smart Underwriting</li>
@@ -144,7 +144,7 @@ export default function Offerings() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 w-full max-w-6xl">
                     <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
-                        <img src={RT1} alt="Glimpse" className="w-16 h-16 mb-4" />
+                        <img src={RT1} alt="Glimpse" className="w-20 h-20 mb-4" />
                         <h3 className="text-sm md:text-xl font-semibold mb-2">Analyse Your Sales</h3>
                         <p className="text-xs md:text-sm max-w-4xl mx-auto text-gray-600">
                             Streamline daily tasks by integrating all sales processes of a retail business.
@@ -152,7 +152,7 @@ export default function Offerings() {
                     </div>
 
                     <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
-                        <img src={RT2} alt="Customer Portals" className="w-16 h-16 mb-4" />
+                        <img src={RT2} alt="Customer Portals" className="w-2- h-20 mb-4" />
                         <h3 className="text-sm md:text-xl font-semibold mb-2">Customization & Add-On</h3>
                         <p className="text-xs md:text-sm max-w-4xl mx-auto text-gray-600">
                             Facilitate the customization of the user interface to ensure instant access to assigned tasks
@@ -160,7 +160,7 @@ export default function Offerings() {
                     </div>
 
                     <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
-                        <img src={RT3} alt="Insurance BI" className="w-16 h-16 mb-4" />
+                        <img src={RT3} alt="Insurance BI" className="w-2- h-20 mb-4" />
                         <h3 className="text-sm md:text-xl font-semibold mb-2">Market Trends</h3>
                         <p className="text-xs md:text-sm max-w-4xl mx-auto text-gray-600">
                         Are based on proven technologies and help companies to respond better to market developments
@@ -168,14 +168,14 @@ export default function Offerings() {
                     </div>
 
                     <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
-                        <img src={RT4} alt="Mobile Insurance" className="w-16 h-16 mb-4" />
+                        <img src={RT4} alt="Mobile Insurance" className="w-2- h-20 mb-4" />
                         <h3 className="text-sm md:text-xl font-semibold mb-2">Refined Monitoring</h3>
                         <p className="text-xs md:text-sm max-w-4xl mx-auto text-gray-600">
                         ALlow your business partners to support your daily work and monitor your business activity
                         </p>
                     </div>
                     <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
-                        <img src={RT5} alt="Mobile Insurance" className="w-16 h-16 mb-4" />
+                        <img src={RT5} alt="Mobile Insurance" className="w-2- h-20 mb-4" />
                         <h3 className="text-sm md:text-xl font-semibold mb-2">Refined Monitoring</h3>
                         <p className="text-xs md:text-sm max-w-4xl mx-auto text-gray-600">
                         Boost work productivity by harmonizing data from various company departments
@@ -192,7 +192,7 @@ export default function Offerings() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl">
                     <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
                         <img src={CS1} alt="Mobile App" className="w-16 h-16 mb-4" />
-                        <h3 className="text-xl font-semibold mb-2">Mobile App Development</h3>
+                        <h3 className="text-sm md:text-xl font-semibold mb-2">Mobile App Development</h3>
                         <p className="text-gray-600">High performance mobile apps in Android & iOS</p>
                         <ul className="text-gray-600 text-sm list-disc pl-5 text-left mt-2">
                             <li>App Designing</li>
@@ -203,7 +203,7 @@ export default function Offerings() {
 
                     <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
                         <img src={CS2} alt="Web App" className="w-16 h-16 mb-4" />
-                        <h3 className="text-xl font-semibold mb-2">Web App Development</h3>
+                        <h3 className="text-sm md:text-xl font-semibold mb-2">Web App Development</h3>
                         <p className="text-gray-600">Offshore software and web app services</p>
                         <ul className="text-gray-600 text-sm list-disc pl-5 text-left mt-2">
                             <li>Conceptualization</li>
@@ -214,7 +214,7 @@ export default function Offerings() {
 
                     <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
                         <img src={CS3} alt="Custom Software" className="w-16 h-16 mb-4" />
-                        <h3 className="text-xl font-semibold mb-2">Custom Software</h3>
+                        <h3 className="text-sm md:text-xl font-semibold mb-2">Custom Software</h3>
                         <p className="text-gray-600">Tailored software solutions for enterprise needs</p>
                         <ul className="text-gray-600 text-sm list-disc pl-5 text-left mt-2">
                             <li>Conceptualization</li>
