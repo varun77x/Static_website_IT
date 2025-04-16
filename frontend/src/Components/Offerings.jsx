@@ -9,6 +9,11 @@ import TD4 from '../assets/TD4.png';
 import CS1 from '../assets/CS1.png';
 import CS2 from '../assets/CS2.png';
 import CS3 from '../assets/CS3.png';
+import RT1 from '../assets/RT1.png';
+import RT2 from '../assets/RT2.png';
+import RT3 from '../assets/RT3.png';
+import RT4 from '../assets/RT4.png';
+import RT5 from '../assets/RT5.png';
 
 export default function Offerings() {
     return (
@@ -35,7 +40,7 @@ export default function Offerings() {
             <section id="insurance" className="mt-20 w-full bg-gray-100 py-20 px-6 flex flex-col items-center">
                 <h2 className="text-3xl font-semibold mb-12 text-center">INSURANCE SOLUTIONS</h2>
 
-                <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-6xl">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-6xl">
                     <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
                         <img src={IS1} alt="Glimpse" className="w-16 h-16 mb-4" />
                         <h3 className="text-sm md:text-xl font-semibold mb-2">GLIMPSE - Life Insurance Admin System</h3>
@@ -132,14 +137,52 @@ export default function Offerings() {
                 </div>
             </section>
 
+
             {/* Retail Section */}
             <section id="retail" className="mt-20 w-full bg-white text-center flex flex-col justify-center items-center px-6">
-                <h2 className="text-3xl font-semibold mb-6">RETAIL</h2>
-                <p className="text-lg max-w-4xl mx-auto text-blue-500 underline">
-                    <a href="https://ebt-me.com/retail/" target="_blank" rel="noopener noreferrer">
-                        https://ebt-me.com/retail/
-                    </a>
-                </p>
+                <h2 className="text-3xl font-semibold mb-12 text-center">INSURANCE SOLUTIONS</h2>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 w-full max-w-6xl">
+                    <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
+                        <img src={RT1} alt="Glimpse" className="w-16 h-16 mb-4" />
+                        <h3 className="text-sm md:text-xl font-semibold mb-2">Analyse Your Sales</h3>
+                        <p className="text-xs md:text-sm max-w-4xl mx-auto text-gray-600">
+                            Streamline daily tasks by integrating all sales processes of a retail business.
+                        </p>
+                    </div>
+
+                    <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
+                        <img src={RT2} alt="Customer Portals" className="w-16 h-16 mb-4" />
+                        <h3 className="text-sm md:text-xl font-semibold mb-2">Customization & Add-On</h3>
+                        <p className="text-xs md:text-sm max-w-4xl mx-auto text-gray-600">
+                            Facilitate the customization of the user interface to ensure instant access to assigned tasks
+                        </p>
+                    </div>
+
+                    <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
+                        <img src={RT3} alt="Insurance BI" className="w-16 h-16 mb-4" />
+                        <h3 className="text-sm md:text-xl font-semibold mb-2">Market Trends</h3>
+                        <p className="text-xs md:text-sm max-w-4xl mx-auto text-gray-600">
+                        Are based on proven technologies and help companies to respond better to market developments
+                        </p>
+                    </div>
+
+                    <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
+                        <img src={RT4} alt="Mobile Insurance" className="w-16 h-16 mb-4" />
+                        <h3 className="text-sm md:text-xl font-semibold mb-2">Refined Monitoring</h3>
+                        <p className="text-xs md:text-sm max-w-4xl mx-auto text-gray-600">
+                        ALlow your business partners to support your daily work and monitor your business activity
+                        </p>
+                    </div>
+                    <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
+                        <img src={RT5} alt="Mobile Insurance" className="w-16 h-16 mb-4" />
+                        <h3 className="text-sm md:text-xl font-semibold mb-2">Refined Monitoring</h3>
+                        <p className="text-xs md:text-sm max-w-4xl mx-auto text-gray-600">
+                        Boost work productivity by harmonizing data from various company departments
+                        </p>
+                    </div>
+                </div>
+
             </section>
 
             {/* Custom Software Section */}
