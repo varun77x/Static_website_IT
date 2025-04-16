@@ -14,27 +14,28 @@ export default function Offerings() {
     return (
         <>
             {/* Offerings Title Section */}
-            <section id="offerings" className="mt-20 w-full bg-white flex flex-col justify-center items-center px-6 py-4">
-                <h2 className="text-4xl md:text-6xl font-semibold mb-10 text-center w-full">OFFERINGS</h2>
+            <section id="offerings" className="mt-20 w-full bg-white flex flex-col justify-center items-center px-4 sm:px-6 py-4 sm:py-6">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-8 sm:mb-10 text-center w-full">OFFERINGS</h2>
 
-                <div className="flex flex-col space-y-6 w-full max-w-5xl">
-                    <div className="bg-green-400 hover:bg-green-500 transition-colors duration-400 rounded-2xl shadow-lg p-8">
-                        <h3 className="text-2xl mb-2 text-center italic">Insurance</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 w-full max-w-4xl">
+                    <div className="transition-colors duration-400 rounded-2xl shadow-lg p-4 sm:p-6">
+                        <h3 className="text-lg sm:text-xl md:text-2xl mb-2 text-center italic">Insurance</h3>
                     </div>
-                    <div className="bg-red-300 hover:bg-red-400 transition-colors duration-500 rounded-2xl shadow-lg p-8">
-                        <h3 className="text-2xl mb-2 text-center italic">Retail</h3>
+                    <div className="transition-colors duration-500 rounded-2xl shadow-lg p-4 sm:p-6">
+                        <h3 className="text-lg sm:text-xl md:text-2xl mb-2 text-center italic">Retail</h3>
                     </div>
-                    <div className="bg-yellow-300 hover:bg-yellow-400 transition-colors duration-400 rounded-2xl shadow-lg p-8">
-                        <h3 className="text-2xl mb-2 text-center italic">Custom Software Development</h3>
+                    <div className="transition-colors duration-400 rounded-2xl shadow-lg p-4 sm:p-6">
+                        <h3 className="text-lg sm:text-xl md:text-2xl mb-2 text-center italic">Custom Software Development</h3>
                     </div>
                 </div>
             </section>
+
 
             {/* Insurance Solutions Section */}
             <section id="insurance" className="mt-20 w-full bg-gray-100 py-20 px-6 flex flex-col items-center">
                 <h2 className="text-3xl font-semibold mb-12 text-center">INSURANCE SOLUTIONS</h2>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-6xl">
+                <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-6xl">
                     <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
                         <img src={IS1} alt="Glimpse" className="w-16 h-16 mb-4" />
                         <h3 className="text-xl font-semibold mb-2">GLIMPSE - Life Insurance Admin System</h3>
