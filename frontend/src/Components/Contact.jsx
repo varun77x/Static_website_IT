@@ -9,7 +9,7 @@ export default function Contact(){
     {/* Google Map */}
     <div className="w-full h-96 rounded-lg overflow-hidden shadow-md">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.62772018211!2d77.04586597408657!3d28.46063669186841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1939ee0b5733%3A0x2b709b3cb840c0d6!2sGoogle%20Signature%20Tower%20A!5e0!3m2!1sen!2sin!4v1744733710824!5m2!1sen!2sin" // your embed link here
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.0097552950483!2d72.9986478!3d19.0633087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c1d0797205cf%3A0x427bc06eb96f4230!2sXangars%20Infratech%20Solutions!5e0!3m2!1sen!2sin!4v1744788737192!5m2!1sen!2sin" // your embed link here
         width="100%"
         height="100%"
         style={{ border: 0 }}
