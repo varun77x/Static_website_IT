@@ -38,7 +38,7 @@ export default function Offerings() {
                 <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-6xl">
                     <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
                         <img src={IS1} alt="Glimpse" className="w-16 h-16 mb-4" />
-                        <h3 className="text-xl font-semibold mb-2">GLIMPSE - Life Insurance Admin System</h3>
+                        <h3 className="text-sm md:text-xl font-semibold mb-2">GLIMPSE - Life Insurance Admin System</h3>
                         <ul className="text-gray-600 text-sm list-disc pl-5 text-left">
                             <li>Policy Creation</li>
                             <li>Policy Administration</li>
@@ -52,7 +52,7 @@ export default function Offerings() {
 
                     <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
                         <img src={IS2} alt="Customer Portals" className="w-16 h-16 mb-4" />
-                        <h3 className="text-xl font-semibold mb-2">Customer Portals</h3>
+                        <h3 className="text-sm md:text-xl font-semibold mb-2">Customer Portals</h3>
                         <ul className="text-gray-600 text-sm list-disc pl-5 text-left">
                             <li>Brings insurer closer to clients</li>
                             <li>Manage client issues remotely</li>
@@ -64,7 +64,7 @@ export default function Offerings() {
 
                     <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
                         <img src={IS3} alt="Insurance BI" className="w-16 h-16 mb-4" />
-                        <h3 className="text-xl font-semibold mb-2">Insurance Business Intelligence</h3>
+                        <h3 className="text-sm md:text-xl font-semibold mb-2">Insurance Business Intelligence</h3>
                         <ul className="text-gray-600 text-sm list-disc pl-5 text-left">
                             <li>Logic scripts</li>
                             <li>Templates</li>
@@ -75,7 +75,7 @@ export default function Offerings() {
 
                     <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
                         <img src={IS4} alt="Mobile Insurance" className="w-16 h-16 mb-4" />
-                        <h3 className="text-xl font-semibold mb-2">Mobile Insurance</h3>
+                        <h3 className="text-sm md:text-xl font-semibold mb-2">Mobile Insurance</h3>
                         <ul className="text-gray-600 text-sm list-disc pl-5 text-left">
                             <li>Location search</li>
                             <li>Nearby hospitals/doctors</li>
