@@ -1,4 +1,48 @@
+import { useState } from "react";
+
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbwb9N7-5BT-NXCgXdGcAINeFq4gezF31_vABeKvDkiuBUyeXGZiDpx3jy7OqZ623EFhDw/exec",
+        {
+          method: "POST",
+          mode: "no-cors", // this disables the CORS error, but the response is opaque
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      // ✅ Success fallback — don't parse response!
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      })
+      alert("Message sent successfully!");
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("Something went wrong.");
+    }
+  };
+
   return (
     <section id="contact" className="px-4 sm:px-6 py-20 bg-gray-100">
       <h2 className="text-4xl sm:text-5xl font-semibold mb-12 text-center">
@@ -21,16 +65,16 @@ export default function Contact() {
 
         {/* Contact Form */}
         <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            alert("Message sent!");
-          }}
+          onSubmit={handleSubmit}
           className="bg-white p-6 sm:p-8 rounded-xl shadow-lg w-full space-y-6"
         >
           <div>
             <label className="block mb-2 font-medium text-gray-700">Name</label>
             <input
               type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
               required
               placeholder="Your name"
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
@@ -41,6 +85,9 @@ export default function Contact() {
             <label className="block mb-2 font-medium text-gray-700">Email</label>
             <input
               type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
               required
               placeholder="you@example.com"
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
@@ -50,6 +97,9 @@ export default function Contact() {
           <div>
             <label className="block mb-2 font-medium text-gray-700">Message</label>
             <textarea
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
               rows="4"
               required
               placeholder="Your message..."

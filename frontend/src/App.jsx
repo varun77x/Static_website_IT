@@ -1,4 +1,4 @@
-// App.js
+// App.jsx
 import React from 'react';
 import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
@@ -18,9 +18,8 @@ const App = () => {
       <Partners />
       <Careers />
       <Contact />
-
-    </div>
+      </div>
   );
-}
+};
 
 export default App;

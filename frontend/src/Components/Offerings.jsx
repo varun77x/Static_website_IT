@@ -15,7 +15,63 @@ import RT3 from '../assets/RT3.png';
 import RT4 from '../assets/RT4.png';
 import RT5 from '../assets/RT5.png';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+
 export default function Offerings() {
+    const insuranceSolutions = [
+        {
+            id: 1,
+            img: IS1,
+            title: "GLIMPSE - Life Insurance Admin System",
+            features: [
+                "Policy Creation",
+                "Policy Administration",
+                "Claim Management",
+                "Reinsurance",
+                "Billing and Accounting",
+                "Commission Module",
+                "Reports"
+            ]
+        },
+        {
+            id: 2,
+            img: IS2,
+            title: "Customer Portals",
+            features: [
+                "Brings insurer closer to clients",
+                "Manage client issues remotely",
+                "Customized portals",
+                "Track online enrollment",
+                "Claim status management"
+            ]
+        },
+        {
+            id: 3,
+            img: IS3,
+            title: "Insurance Business Intelligence",
+            features: [
+                "Logic scripts",
+                "Templates",
+                "KPIs",
+                "Reports"
+            ]
+        },
+        {
+            id: 4,
+            img: IS4,
+            title: "Mobile Insurance",
+            features: [
+                "Location search",
+                "Nearby hospitals/doctors",
+                "Room rates",
+                "Doctor specialty"
+            ]
+        }
+    ];
     return (
         <>
             {/* Offerings Title Section */}
@@ -40,55 +96,53 @@ export default function Offerings() {
             <section id="insurance" className="mt-20 w-full bg-gray-100 py-20 px-6 flex flex-col items-center">
                 <h2 className="text-3xl font-semibold mb-12 text-center">INSURANCE SOLUTIONS</h2>
 
+                {/* Desktop Grid View */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-6xl">
-                    <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
-                        <img src={IS1} alt="Glimpse" className="w-16 h-16 mb-4" />
-                        <h3 className="text-sm md:text-xl font-semibold mb-2">GLIMPSE - Life Insurance Admin System</h3>
-                        <ul className="text-gray-600 text-xs md:text-sm list-disc pl-5 text-left">
-                            <li>Policy Creation</li>
-                            <li>Policy Administration</li>
-                            <li>Claim Management</li>
-                            <li>Reinsurance</li>
-                            <li>Billing and Accounting</li>
-                            <li>Commission Module</li>
-                            <li>Reports</li>
-                        </ul>
-                    </div>
-
-                    <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
-                        <img src={IS2} alt="Customer Portals" className="w-16 h-16 mb-4" />
-                        <h3 className="text-sm md:text-xl font-semibold mb-2">Customer Portals</h3>
-                        <ul className="text-gray-600 text-xs md:text-sm list-disc pl-5 text-left">
-                            <li>Brings insurer closer to clients</li>
-                            <li>Manage client issues remotely</li>
-                            <li>Customized portals</li>
-                            <li>Track online enrollment</li>
-                            <li>Claim status management</li>
-                        </ul>
-                    </div>
-
-                    <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
-                        <img src={IS3} alt="Insurance BI" className="w-16 h-16 mb-4" />
-                        <h3 className="text-sm md:text-xl font-semibold mb-2">Insurance Business Intelligence</h3>
-                        <ul className="text-gray-600 text-xs md:text-sm list-disc pl-5 text-left">
-                            <li>Logic scripts</li>
-                            <li>Templates</li>
-                            <li>KPIs</li>
-                            <li>Reports</li>
-                        </ul>
-                    </div>
-
-                    <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
-                        <img src={IS4} alt="Mobile Insurance" className="w-16 h-16 mb-4" />
-                        <h3 className="text-sm md:text-xl font-semibold mb-2">Mobile Insurance</h3>
-                        <ul className="text-gray-600 text-xs md:text-sm list-disc pl-5 text-left">
-                            <li>Location search</li>
-                            <li>Nearby hospitals/doctors</li>
-                            <li>Room rates</li>
-                            <li>Doctor specialty</li>
-                        </ul>
-                    </div>
+                    {insuranceSolutions.map((solution) => (
+                        <div
+                            key={solution.id}
+                            className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col h-full"
+                        >
+                            <div className="flex flex-col items-center text-center flex-grow">
+                                <img src={solution.img} alt={solution.title} className="w-16 h-16 mb-4" />
+                                <h3 className="text-sm md:text-xl font-semibold mb-2">{solution.title}</h3>
+                                <ul className="text-gray-600 text-xs md:text-sm list-disc pl-5 text-left w-full">
+                                    {solution.features.map((feature, index) => (
+                                        <li key={index}>{feature}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                    ))}
                 </div>
+
+                {/* Mobile Swiper View */}
+                {/* <div className="sm:hidden w-full max-w-md px-4">
+                    <Swiper
+                        slidesPerView={1.2}
+                        spaceBetween={20}
+                        centeredSlides={false}
+                        pagination={{ clickable: true }}
+                        modules={[Pagination]}
+                        className="mySwiper"
+                    >
+                        {insuranceSolutions.map((solution) => (
+                            <SwiperSlide key={solution.id}>
+                                <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col h-full">
+                                    <div className="flex flex-col items-center text-center flex-grow h-60">
+                                        <img src={solution.img} alt={solution.title} className="w-16 h-16 mb-4" />
+                                        <h3 className="text-sm md:text-xl font-semibold mb-2">{solution.title}</h3>
+                                        <ul className="text-gray-600 text-xs md:text-sm list-disc pl-5 text-left w-full">
+                                            {solution.features.map((feature, index) => (
+                                                <li key={index}>{feature}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div> */}
             </section>
 
             {/* Additional Insurance Section */}
@@ -163,7 +217,7 @@ export default function Offerings() {
                         <img src={RT3} alt="Insurance BI" className="w-2- h-20 mb-4" />
                         <h3 className="text-sm md:text-xl font-semibold mb-2">Market Trends</h3>
                         <p className="text-xs md:text-sm max-w-4xl mx-auto text-gray-600">
-                        Are based on proven technologies and help companies to respond better to market developments
+                            Are based on proven technologies and help companies to respond better to market developments
                         </p>
                     </div>
 
@@ -171,14 +225,14 @@ export default function Offerings() {
                         <img src={RT4} alt="Mobile Insurance" className="w-2- h-20 mb-4" />
                         <h3 className="text-sm md:text-xl font-semibold mb-2">Refined Monitoring</h3>
                         <p className="text-xs md:text-sm max-w-4xl mx-auto text-gray-600">
-                        ALlow your business partners to support your daily work and monitor your business activity
+                            ALlow your business partners to support your daily work and monitor your business activity
                         </p>
                     </div>
                     <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
                         <img src={RT5} alt="Mobile Insurance" className="w-2- h-20 mb-4" />
                         <h3 className="text-sm md:text-xl font-semibold mb-2">Refined Monitoring</h3>
                         <p className="text-xs md:text-sm max-w-4xl mx-auto text-gray-600">
-                        Boost work productivity by harmonizing data from various company departments
+                            Boost work productivity by harmonizing data from various company departments
                         </p>
                     </div>
                 </div>
