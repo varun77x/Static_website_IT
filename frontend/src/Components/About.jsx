@@ -3,10 +3,10 @@ export default function About() {
     <section id="about" className="py-12 px-4 md:px-12 bg-gray-100">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8">
         <div className="text-center w-full">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+          <h2 className="text-3xl font-semibold text-gray-800 mb-6">
             ABOUT US
           </h2>
-          <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+          <p className="text-sm md:text-lg text-gray-700 leading-relaxed">
             <span className="block mb-4">
               Xangars is a global IT solutions provider with its cutting-edge solutions and services that provide support and impetus to emerging & established businesses in the areas of IT consulting, product engineering, custom software development, application integration and maintenance.
             </span>
