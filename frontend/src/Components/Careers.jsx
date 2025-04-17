@@ -1,4 +1,5 @@
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 export default function Careers() {
   const [formData, setFormData] = useState({
@@ -30,7 +31,7 @@ export default function Careers() {
           body: JSON.stringify(formData),
         }
       );
-      console.log(formData);
+      
 
       setFormData({
         fullName: "",
@@ -39,10 +40,9 @@ export default function Careers() {
         resumeLink: "",
       });
 
-      alert("Application submitted!");
+      toast.success("Submitted!");
     } catch (error) {
-      console.error("Error submitting form:", error);
-      alert("Submission failed.");
+      toast.error("Submission failed. Please try again after some time.");
     }
   };
 
