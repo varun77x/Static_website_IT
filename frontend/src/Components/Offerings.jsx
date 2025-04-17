@@ -15,10 +15,11 @@ import RT3 from '../assets/RT3.png';
 import RT4 from '../assets/RT4.png';
 import RT5 from '../assets/RT5.png';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/pagination';
+// decided not to use swiper...
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Pagination } from 'swiper/modules';
+// import 'swiper/css';
+// import 'swiper/css/pagination';
 
 
 export default function Offerings() {
@@ -194,7 +195,7 @@ export default function Offerings() {
 
             {/* Retail Section */}
             <section id="retail" className="mt-20 w-full bg-white text-center flex flex-col justify-center items-center px-6">
-                <h2 className="text-3xl font-semibold mb-12 text-center">INSURANCE SOLUTIONS</h2>
+                <h2 className="text-3xl font-semibold mb-12 text-center">RETAIL</h2>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 w-full max-w-6xl">
                     <div className="bg-white p-6 rounded-2xl shadow-md hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">

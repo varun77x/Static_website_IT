@@ -1,3 +1,4 @@
+import partnersImg from '../assets/partnersImg.jpeg'
 export default function Partners() {
   return (
     <section
@@ -7,15 +8,7 @@ export default function Partners() {
       <h2 className="text-4xl sm:text-5xl lg:text-6xl font-semibold mb-6">
         PARTNERS
       </h2>
-      <p className="text-base sm:text-lg max-w-2xl mx-auto text-blue-500 underline break-words">
-        <a
-          href="https://ebt-me.com/partners/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          https://ebt-me.com/partners/
-        </a>
-      </p>
+      <img src={partnersImg} alt="partnersImg.jpeg" />
     </section>
   );
 }
